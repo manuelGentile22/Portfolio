@@ -1,0 +1,269 @@
+* {
+    margin : 0px;
+    padding : 0px;
+}
+
+:root{
+    --blue: #0b111f;
+    --ombra: 0px 0px 20px 0px rgba(0,0,0,0.64);
+    --white: white;
+    }
+
+h1,h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p,li,a {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.containerFlexNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--blue);
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+}
+
+#name {
+    color: var(--white);
+    padding: 25px;
+    font-style: thin;
+    text-align: right;
+}
+
+#navBar {
+    padding: 25px;
+}
+
+#navBar li {
+    display: inline-block;
+    color: var(--white);
+    padding-left: 10px;
+    text-align: right;
+}
+
+#navBar li a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.backCalcolatrice {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 840px;
+    margin-top: 50px;
+}
+
+#boxCalcolatrice{
+    margin-top: 100px;
+    padding: 20px;
+    width: 300px;
+    height: 350px;
+    background-color: darkseagreen;
+    border: 5px solid rgb(2, 18, 27);
+    border-radius: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 0px;
+}
+
+.boxDisplayCalc {
+    grid-area: 1 / 1 / 1 / 5;
+    width: 100%;
+    font-size: 35px;
+    color: #000;
+    background-color: white;
+    font-display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+#display{
+    padding: 5px;
+    width: 100%;
+}
+
+.buttonOperator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+    border: 1px solid hsla(black, black, black, 0%);
+    border-radius: 100%;
+    background-color: darkgreen;
+    font-size: 20px;
+    color: white;
+}
+
+.buttonNumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+    border: 1px solid hsla(black, black, black, 0%);
+    border-radius: 100%;
+    background-color: lightgreen;
+    font-size: 20px;
+    color: white;
+}
+
+.buttonNumber0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 75%;
+    border: 5px solid hsla(black, black, black, 0%);
+    border-radius: 30%;
+    background-color: lightgreen;
+    font-size: 20px;
+    color: white;
+}
+
+.btnCalcAc{
+    grid-area: 2 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.btnCalcC{
+    grid-area: 2 / 2 / 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnCalcPercent{
+    grid-area: 2 / 3 / 2 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnDivisione {
+    grid-area: 2 / 4 / 2 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnMoltiplicazione {
+    grid-area: 3 / 4 / 3 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnSottrazione {
+    grid-area: 4 / 4 / 4 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnSomma {
+    grid-area: 5 / 4 / 5 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnUguale {
+    grid-area: 6 / 4 / 6 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnN7 {
+    grid-area: 3 / 1 / 3 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnN8 {
+    grid-area: 3 / 2 / 3 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnN9 {
+    grid-area: 3 / 3 / 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnN4 {
+    grid-area: 4 / 1 / 4 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnN5 {
+    grid-area: 4 / 2 / 4 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnN6 {
+    grid-area: 4 / 3 / 4 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnN1 {
+    grid-area: 5 / 1 / 5 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnN2 {
+    grid-area: 5 / 2 / 5 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnN3 {
+    grid-area: 5 / 3 / 5 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnN0 {
+    grid-area: 6 / 1 / 6 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnVirg {
+    grid-area: 6 / 3 / 6 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
