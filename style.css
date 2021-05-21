@@ -296,7 +296,8 @@ main{
     justify-content: center;
     align-items: center;
     box-shadow: var(--ombra);
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .projectsTitle {
@@ -309,15 +310,18 @@ main{
     flex-direction: row;
     background-color: var(--blue);
     margin: 20px;
-    height: 250px;
-    width: 500px;
-    padding: 40px;
+    height: auto;
+    width: auto;
+    padding: 20px;
     box-shadow: var(--ombra);
+    justify-content: center;
+    align-items: center;
 }
 
 .boxImgProject {
-    height: 100%;
-    width: 50%;
+    display: flex;
+    height: 250px;
+    width: 300px;
     background-image: url(./img/calcolatrice.png);
     background-position:center;
     background-size: cover;
@@ -331,18 +335,18 @@ main{
     display: flex;
     flex-direction: column;
     background-color: var(--blue);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    height: auto;
-    width: 200px;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     font-size: 0.8em;
-    padding-left: 50px;
+    padding-left: 20px;
+    text-align: center;
 }
 
 #pressProject {
     color: var(--white);
     text-decoration: none;
+    text-align: center;
 }
 
 #pressProject a{
@@ -353,6 +357,45 @@ main{
     color: var(--white);
 }
 
+@media only screen and (max-width: 530px) {
+    .boxProject {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--blue);
+        height: auto;
+        width: auto;
+        padding: 40px;
+        box-shadow: var(--ombra);
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .boxImgProject {
+        display: flex;
+        height: 200px;
+        width: 150px;
+        background-image: url(./img/calcolatrice.png);
+        background-position:center;
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        border: 2px solid white;
+        border-radius: 15%;
+    }
+
+    .boxPressProject {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--blue);
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        font-size: 0.8em;
+        padding-top: 10px;
+    }
+}
 
 /* -- FOOTER -- */
 
@@ -374,4 +417,8 @@ main{
     margin: 20px, 0px;
     font-size: 0.8em;
     line-height: 30px;
+}
+
+.footer p {
+    text-decoration: none;
 }
