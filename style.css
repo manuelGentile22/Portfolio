@@ -66,47 +66,6 @@ main{
     color: var(--white);
 }
 
-@media only screen and (max-width: 530px) {
-    .containerFlexNav {
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    #navBar, #name {
-        padding: 5px;
-    }
-
-    #skillsBox1{
-        display: flex;
-        flex-flow: row wrap;
-        height: auto;
-        width: 100%;
-        justify-content: space-evenly;
-        align-items: center;
-        margin: 10px 25px;
-    }
-    
-    #skillsBox2{
-        display: flex;
-        flex-flow: row wrap;
-        height: auto;
-        width: 100%;
-        justify-content: space-evenly;
-        align-items: center;
-        margin: 10px 25px;
-    }
-
-    #loghiBox {
-        text-align: center;
-        color: var(--white);
-        height: 100px;
-        width: 100px;
-        margin: 7.5px;
-    }
-
-}
-
   /* -- MAIN -- */
 
   /* -- Press -- */
@@ -196,13 +155,13 @@ main{
 #loghiBox {
     text-align: center;
     color: var(--white);
-    height: 150px;
-    width: 150px;
+    height: 160px;
+    width: 160px;
     margin: 15px;
 }
 
 #titleLogo {
-    font-size: 20px;
+    font-size: 25px;
     color: black;
     font-style: thin;
 }
@@ -312,7 +271,7 @@ main{
     margin: 20px;
     height: auto;
     width: auto;
-    padding: 20px;
+    padding: 10px;
     box-shadow: var(--ombra);
     justify-content: center;
     align-items: center;
@@ -322,7 +281,7 @@ main{
     display: flex;
     height: 250px;
     width: 300px;
-    background-image: url(./img/calcolatrice.png);
+    background-image: url(./img/Prenotazione.png);
     background-position:center;
     background-size: cover;
     background-position:center;
@@ -355,47 +314,9 @@ main{
 
 #pressPr {
     color: var(--white);
+    font-size: 1.2em;
 }
 
-@media only screen and (max-width: 530px) {
-    .boxProject {
-        display: flex;
-        flex-direction: column;
-        background-color: var(--blue);
-        height: auto;
-        width: auto;
-        padding: 40px;
-        box-shadow: var(--ombra);
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .boxImgProject {
-        display: flex;
-        height: 200px;
-        width: 150px;
-        background-image: url(./img/calcolatrice.png);
-        background-position:center;
-        background-size: cover;
-        background-position:center;
-        background-repeat: no-repeat;
-        border: 2px solid white;
-        border-radius: 15%;
-    }
-
-    .boxPressProject {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--blue);
-        height: auto;
-        width: 100%;
-        overflow: hidden;
-        font-size: 0.8em;
-        padding-top: 10px;
-    }
-}
 
 /* -- FOOTER -- */
 
@@ -421,4 +342,93 @@ main{
 
 .footer p {
     text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 530px) {
+    .containerFlexNav {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #navBar, #name {
+        padding: 5px;
+    }
+
+    #skillsBox1{
+        display: flex;
+        flex-flow: row wrap;
+        height: auto;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 10px 25px;
+    }
+    
+    #skillsBox2{
+        display: flex;
+        flex-flow: row wrap;
+        height: auto;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 10px 25px;
+    }
+
+    #loghiBox {
+        text-align: center;
+        color: var(--white);
+        height: 100px;
+        width: 100px;
+        margin: 7.5px;
+    }
+
+    #titleLogo {
+        font-size: 15px;
+        color: black;
+        font-style: thin;
+    }
+
+}
+
+@media only screen and (max-width: 530px) {
+    .boxProject {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--blue);
+        height: auto;
+        width: auto;
+        padding: 20px;
+        box-shadow: var(--ombra);
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .boxImgProject {
+        display: flex;
+        height: 200px;
+        width: 150px;
+        background-image: url(./img/Prenotazione.png);
+        background-position:center;
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        border: 2px solid white;
+        border-radius: 15%;
+    }
+
+    .boxPressProject {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--blue);
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        font-size: 0.8em;
+        padding-top: 10px;
+    }
 }
