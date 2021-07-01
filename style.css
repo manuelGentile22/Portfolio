@@ -342,6 +342,7 @@ main{
 
 .footer p {
     text-decoration: none;
+    color: var(--white);
 }
 
 
