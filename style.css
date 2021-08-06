@@ -290,6 +290,18 @@ main{
     border-radius: 15%;
 }
 
+.boxImgProject2{
+    display: flex;
+    height: 250px;
+    width: 300px;
+    background-image: url(./img/netflixBack.png);
+    background-size: 100%;
+    background-position-y: initial;
+    background-repeat: no-repeat;
+    border: 2px solid white;
+    border-radius: 15%;
+}
+
 .boxPressProject {
     display: flex;
     flex-direction: column;
