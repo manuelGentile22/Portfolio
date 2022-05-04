@@ -195,13 +195,6 @@ main{
     background-repeat: no-repeat;
 }
 
-.php {
-    background-image: url(./img/php.png);
-    background-position: center;
-    background-size: 90%;
-    background-repeat: no-repeat;
-}
-
 .jquery {
     background-image: url(./img/jquery.png);
     background-position: center;
